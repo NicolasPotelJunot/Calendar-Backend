@@ -86,9 +86,7 @@ const loginUsuario = async (req,res) =>{
             ok: false,
             msg: "error, hable con el admin"
         })
-    }
-
-    
+    }    
 }
 
 const revalidarToken = async (req,res) =>{
@@ -100,6 +98,8 @@ const revalidarToken = async (req,res) =>{
 
     res.json({
         ok: true,
+        uid, 
+        name,
         token
     })
     
